@@ -5,6 +5,7 @@ input.onButtonPressed(Button.A, function () {
         counter += 1
         sprite_speed += -2
         edge_speed += -2
+        game.addScore(1)
     }
     if (sprite.get(LedSpriteProperty.X) != 2) {
         music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Wawawawaa), music.PlaybackMode.InBackground)
